@@ -18,7 +18,13 @@ header {
 	left: 0;
 	width: 100vw;
 	height: 80px;
-	background-color: blue;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 15px;
+}
+
+.logo img {
+	width: 200px;
 }
 
 .content {
