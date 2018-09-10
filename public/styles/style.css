@@ -47,14 +47,6 @@ header nav a:hover {
   background-color: #D74F48;
   text-shadow: none;
   box-shadow: 0 1px 10px rgba(0,0,0,0.3);
-  padding: 0;
-  margin: 0;
-
-  font-family: Caveat, arial;
-
-  background-color: #f9f9f9;
-
-  text-align: center;
 }
 
 header {
@@ -73,14 +65,22 @@ header {
   width: 200px;
 }
 
-.headerLogo img {
+.header-logo img {
   max-width: 600px;
 }
 
 .content {
   margin: auto;
   margin-top: 80px;
+}
+
+.title-text {
   color: #666;
+}
+
+.content-text {
+  color: #666;
+  max-width: 600px
 }
 
 h1 {
@@ -92,5 +92,7 @@ h2 {
 }
 
 p {
+  color: #666;
   text-align: left;
+  font-family: none;
 }
