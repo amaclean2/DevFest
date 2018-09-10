@@ -1,59 +1,96 @@
 @import url('https://fonts.googleapis.com/css?family=Caveat');
 
 body {
-	padding: 0;
-	margin: 0;
-	font-family: Caveat, arial;
-	background-color: #F8F9FA;
-	text-align: center;
+  padding: 0;
+  margin: 0;
+  font-family: Caveat, arial;
+  background-color: #F8F9FA;
+  text-align: center;
 }
 
 header {
-	display: flex;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100vw;
-	height: 80px;
-	align-items: center;
-	justify-content: space-between;
-	padding: 0 15px;
-	box-sizing: border-box;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 80px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  box-sizing: border-box;
 }
 
 header nav a {
-	font-size: 25px;
-	text-decoration: none;
-	color: #189D5D;
-	padding: 5px 20px;
-	text-transform: uppercase;
-	transition: all 0.3s ease-in-out;
+  font-size: 25px;
+  text-decoration: none;
+  color: #189D5D;
+  padding: 5px 20px;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
 }
 
 header nav a:hover {
-	text-shadow: 0 1px 5px rgba(0,0,0,0.3);
+  text-shadow: 0 1px 5px rgba(0,0,0,0.3);
 }
 
 .buy-button {
-	color: #D74F48;
-	text-transform: none;
-	border: 2px solid #D74F48;
-	border-radius: 5px;
-	margin: 0 20px;
+  color: #D74F48;
+  text-transform: none;
+  border: 2px solid #D74F48;
+  border-radius: 5px;
+  margin: 0 20px;
 }
 
 .buy-button:hover {
-	color: #F8F9FA;
-	background-color: #D74F48;
-	text-shadow: none;
-	box-shadow: 0 1px 10px rgba(0,0,0,0.3);
+  color: #F8F9FA;
+  background-color: #D74F48;
+  text-shadow: none;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.3);
+  padding: 0;
+  margin: 0;
+
+  font-family: Caveat, arial;
+
+  background-color: #f9f9f9;
+
+  text-align: center;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 80px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
 }
 
 .logo img {
-	width: 200px;
+  width: 200px;
+}
+
+.headerLogo img {
+  max-width: 600px;
 }
 
 .content {
-	margin: auto;
-	margin-top: 80px;
+  margin: auto;
+  margin-top: 80px;
+  color: #666;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+p {
+  text-align: left;
 }
