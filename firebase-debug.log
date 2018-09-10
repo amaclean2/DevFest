@@ -1,0 +1,32 @@
+[debug] [2018-09-10T04:13:14.213Z] ----------------------------------------------------------------------
+[debug] [2018-09-10T04:13:14.216Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2018-09-10T04:13:14.216Z] CLI Version:   4.2.1
+[debug] [2018-09-10T04:13:14.216Z] Platform:      darwin
+[debug] [2018-09-10T04:13:14.216Z] Node Version:  v8.4.0
+[debug] [2018-09-10T04:13:14.217Z] Time:          Sun Sep 09 2018 21:13:14 GMT-0700 (PDT)
+[debug] [2018-09-10T04:13:14.217Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-09-10T04:13:14.228Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-09-10T04:13:14.228Z] > authorizing via signed-in user
+[debug] [2018-09-10T04:13:14.230Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/devfest-5e8a0  
+ 
+[debug] [2018-09-10T04:13:14.704Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-10T04:13:14.705Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/devfest-5e8a0  
+ 
+[debug] [2018-09-10T04:13:15.507Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/amaclean/Desktop/AndresSite/AndrewsVersion'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2018-09-10T04:13:16.195Z] Fetching environment
+[debug] [2018-09-10T04:13:16.197Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/801760431034:getServerAppConfig  
+ 
+[debug] [2018-09-10T04:13:16.198Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/801760431034/clients/_:getWebAppConfig  
+ 
+[debug] [2018-09-10T04:13:16.437Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-10T04:13:16.437Z] Starting @google-cloud/functions-emulator
+[debug] [2018-09-10T04:13:16.478Z] <<< HTTP RESPONSE 200
+[info] i  hosting[devfest-5e8a0]: Serving hosting files from: public
+[info] ✔  hosting[devfest-5e8a0]: Local server: http://localhost:5000
+[debug] [2018-09-10T04:13:18.496Z] Parsing function triggers
+[info] i  functions: No HTTPS functions found. Use firebase functions:shell if you would like to emulate other types of functions.
