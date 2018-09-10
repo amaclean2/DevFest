@@ -3,11 +3,8 @@
 body {
 	padding: 0;
 	margin: 0;
-
 	font-family: Caveat, arial;
-
 	background-color: #F8F9FA;
-
 	text-align: center;
 }
 
@@ -57,5 +54,6 @@ header nav a:hover {
 }
 
 .content {
+	margin: auto;
 	margin-top: 80px;
 }
