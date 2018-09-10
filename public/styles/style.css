@@ -138,9 +138,21 @@ h2 {
   font-size: 30px;
 }
 
+h3 {
+  font-size: 20px;
+}
+
+ul {
+  font-family: arial;
+}
+
 p {
   color: #666;
   font-family: arial;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 @media screen and (max-width: 800px) {
