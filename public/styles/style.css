@@ -151,21 +151,30 @@ p {
   font-family: arial;
 }
 
-a {
-  color: #666;
-  font-family: arial;
-}
-
 .devfest {
+  background-image: url('../images/devfest_2017.png');
   background-color: #363636;
-  display: inline-block;
 }
 
 .iwd {
   margin-left: 20px;
-  background-image: linear-gradient(49deg, #7d64ab, #40bdb4 62%, #58c0ee);
-  padding-bottom: 0;
+  background-image: url('../images/iwd-logo.svg');
+  background-color: #40BDB4;
+}
+
+.devfest, .iwd {
   display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  border-radius: 5px;
+  width: 310px;
+  height: 100px;
+  transition: all 0.3s ease-in-out;
+}
+
+.devfest:hover, .iwd:hover {
+  box-shadow: 0 1px 10px rgba(0,0,0,0.5);
 }
 
 .bold {

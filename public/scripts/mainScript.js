@@ -13,7 +13,6 @@ function openMenu() {
 		navBackground = document.querySelectorAll('.nav-background')[0];
 	}
 	
-	nav.style.display = 'block';
 	nav.classList.add('right-menu');
 	navBackground.style.display = 'block';
 	navBackground.classList.remove('nav-background-closed');
@@ -25,7 +24,6 @@ function closeWindow() {
 
 	nav.classList.remove('right-menu');
 	navBackground.classList.add('nav-background-closed');
-	nav.style.display = 'none';
 
 	setTimeout(() => {
 		navBackground.style.display = 'none';
