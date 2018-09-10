@@ -17,7 +17,7 @@ header {
   height: 80px;
   align-items: center;
   justify-content: space-between;
-  padding: 0 15px;
+  padding: 0 15px 0 60px;
   box-sizing: border-box;
 }
 
@@ -61,8 +61,8 @@ header {
   padding: 0 15px;
 }
 
-.logo img {
-  width: 200px;
+header .logo img {
+  width: 160px;
 }
 
 .header-logo img {
@@ -72,6 +72,7 @@ header {
 .content {
   margin: auto;
   margin-top: 80px;
+  width: 700px;
 }
 
 .title-text {
@@ -80,7 +81,6 @@ header {
 
 .content-text {
   color: #666;
-  max-width: 600px
 }
 
 h1 {
@@ -94,5 +94,5 @@ h2 {
 p {
   color: #666;
   text-align: left;
-  font-family: none;
+  font-family: arial;
 }
