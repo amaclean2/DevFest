@@ -82,6 +82,7 @@ header .logo img {
 
 .header-logo img {
   max-width: 600px;
+  margin-top: 200px;
 }
 
 .content {
@@ -96,6 +97,7 @@ header .logo img {
 
 .content-text {
   color: #666;
+  margin-top: 200px;
   text-align: left;
 }
 
