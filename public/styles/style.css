@@ -151,6 +151,23 @@ p {
   font-family: arial;
 }
 
+a {
+  color: #666;
+  font-family: arial;
+}
+
+.devfest {
+  background-color: #363636;
+  display: inline-block;
+}
+
+.iwd {
+  margin-left: 20px;
+  background-image: linear-gradient(49deg, #7d64ab, #40bdb4 62%, #58c0ee);
+  padding-bottom: 0;
+  display: inline-block;
+}
+
 .bold {
   font-weight: bold;
 }
