@@ -53,6 +53,15 @@ header nav a:hover {
   box-shadow: 0 1px 10px rgba(0,0,0,0.3);
 }
 
+.center-button {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.button-margin {
+  margin: 40px 0;
+}
+
 header {
   display: flex;
   position: fixed;
@@ -87,6 +96,7 @@ header .logo img {
 
 .content-text {
   color: #666;
+  text-align: left;
 }
 
 h1 {
@@ -99,6 +109,5 @@ h2 {
 
 p {
   color: #666;
-  text-align: left;
   font-family: arial;
 }
