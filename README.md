@@ -1,5 +1,13 @@
 # DevFest
 
-firebase login
-firebase start
-... or something like that
+## Login
+
+`firebase login`
+
+## Start local server
+
+`firebase serve`
+
+## Deploy
+
+`firebase deploy`
