@@ -25,8 +25,32 @@
       </nav>
     </header>
 
-    <div class="content">
+    <div id="speaker-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="speaker-detail-wrapper">
+                <div class="speaker-detail-photo">
+                    <img id="modal-image"></img>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="content" class="content">
         <div class="content-text">
+            <h1>Codelab Organizer</h1>
+            <div class="speaker-list">
+                <div onclick="trigger(this, 'vikram_tiwari.png')">
+                    <div id="modal-button" class="speaker-card">
+                        <div class="speaker-wrapper">
+                            <div class="speaker-photo">
+                                <img alt="Vikram Tiwari" src="../images/vikram_tiwari.png"></img>
+                            </div>
+                        </div>
+                        <p class="subtitle speaker-name">Vikram Tiwari</p>
+                    </div>
+                </div>
+            </div>
             <h1>Be one of our speakers</h1>
             <h2>Submit a proposal!</h2>
             <p>Interested in giving a talk? Submit a proposal to become one of our speakers. Each sessions will 45 minutes long, with a 15 minute break in between.</p>
@@ -38,5 +62,5 @@
             <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-follow-button twitter-follow-button-rendered" style="position: static; visibility: visible; width: 223px; height: 28px;" title="Twitter Follow Button" src="https://platform.twitter.com/widgets/follow_button.32d6c6b4cb1ed84df04e7f9705a90c47.en.html#dnt=false&amp;id=twitter-widget-0&amp;lang=en&amp;screen_name=sf_gdg&amp;show_count=true&amp;show_screen_name=true&amp;size=l&amp;time=1536554780543" data-screen-name="sf_gdg"></iframe>
         </footer>
     </div>
-  </body>
+</body>
 </html>
