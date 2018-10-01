@@ -1,109 +1,109 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>DevFest</title>
-    <link rel="stylesheet" href="../styles/style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <script src="https://use.fontawesome.com/ba4699d27e.js"></script>
-    <script src="../scripts/mainScript.js"></script>
-    <script src="../scripts/speakers.js"></script>
-    <meta charset="UTF-8">
-  </head>
-  <body>
-    <header>
-      <div class="logo">
-        <a href="/#">
-          <img src="../images/menu_logo.png" alt="DevFest 2018">
-        </a>
-      </div>
-      <div class="menu-button" onclick="openMenu()"></div>
-      <nav>
-        <a href="/agenda.html">Agenda</a>
-        <a href="/speakers.html">Speakers</a>
-        <a href="/codeOfConduct.html">Code of Conduct</a>
-        <!-- <a href="/html/buyTickets.html" class="buy-button">Buy Tickets</a> -->
-      </nav>
-    </header>
-
-    <div id="speaker-modal" class="modal">
-        <div class="modal-content">
-            <span id="close-btn">&times;</span>
-            <div class="speaker-detail-wrapper" id="speaker-face"></div>
-            <div id="speaker-name" class="speaker-name"></div>
-            <div id="speaker-title" class="speaker-title"></div>
-            <div id="speaker-bio" class="speaker-bio"></div>
-        </div>
-    </div>
-
-    <div id="content" class="content">
-        <div class="content-text">
-            <h1>Codelab Organizer</h1>
-            <div class="speaker-list">
-                <div id="modal-button" class="speaker-card" onclick='trigger(VikramObj)'>
-                    <div class="speaker-wrapper" id="speaker-vikram">
-                    </div>
-                    <p class="subtitle speaker-name">Vikram Tiwari</p>
-                </div>
-
+    <head>
+        <meta charset="UTF-8">
+        <title>DevFest</title>
+        <link rel="stylesheet" href="../styles/style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script src="https://use.fontawesome.com/ba4699d27e.js"></script>
+        <script src="../scripts/mainScript.js"></script>
+        <script src="../scripts/speakers.js"></script>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="/#">
+                    <img src="../images/menu_logo.png" alt="DevFest 2018">
+                </a>
             </div>
-            <h1>Speakers</h1>
-            <div class="speaker-list">
-                <div id="modal-button" class="speaker-card" onclick='trigger(GrantObj)'>
-                    <div class="speaker-wrapper" id="speaker-grant">
-                    </div>
-                    <p class="subtitle speaker-name">Grant Timmerman</p>
-                </div>
-                <div id="modal-button" class="speaker-card" onclick='trigger(AishwaryaObj)'>
-                    <div class="speaker-wrapper" id="speaker-aishwarya">
-                    </div>
-                    <p class="subtitle speaker-name">Aishwarya Parasuram</p>
-                </div>
-                <div id="modal-button" class="speaker-card" onclick='trigger(QueenieObj)'>
-                    <div class="speaker-wrapper" id="speaker-queenie">
-                    </div>
-                    <p class="subtitle speaker-name">Queenie Ho</p>
-                </div>
-                <div id="modal-button" class="speaker-card" onclick='trigger(RebecaObj)'>
-                    <div class="speaker-wrapper" id="speaker-rebecca">
-                    </div>
-                    <p class="subtitle speaker-name">Rebeca	Gallardo</p>
-                </div>
-                <div id="modal-button" class="speaker-card" onclick='trigger(FrancesObj)'>
-                    <div class="speaker-wrapper" id="speaker-frances">
-                    </div>
-                    <p class="subtitle speaker-name">Frances	Coronel</p>
-                </div>
-                <div id="modal-button" class="speaker-card" onclick='trigger(TerrenceObj)'>
-                    <div class="speaker-wrapper" id="speaker-terrence">
-                    </div>
-                    <p class="subtitle speaker-name">Terrence	Ryan</p>
-                </div>
-                <div id="modal-button" class="speaker-card" onclick='trigger(MeiyiObj)'>
-                    <div class="speaker-wrapper" id="speaker-meiyi">
-                    </div>
-                    <p class="subtitle speaker-name">Meiyi	Li</p>
-                </div>
-                <div id="modal-button" class="speaker-card" onclick='trigger(CheneyObj)'>
-                    <div class="speaker-wrapper" id="speaker-cheney">
-                    </div>
-                    <p class="subtitle speaker-name">Cheney	Tsai</p>
-                </div>
-                <div id="modal-button" class="speaker-card" onclick='trigger(CarenObj)'>
-                    <div class="speaker-wrapper" id="speaker-caren">
-                    </div>
-                    <p class="subtitle speaker-name">Caren	Chang</p>
-                </div>
-                <div id="modal-button" class="speaker-card" onclick='trigger(ChloeObj)'>
-                    <div class="speaker-wrapper" id="speaker-chloe">
-                    </div>
-                    <p class="subtitle speaker-name">Chloe	Condon</p>
-                    </div>
+            <div class="menu-button" onclick="openMenu()"></div>
+            <nav>
+                <a href="/agenda.html">Agenda</a>
+                <a href="/speakers.html">Speakers</a>
+                <a href="/codeOfConduct.html">Code of Conduct</a>
+                <!-- <a href="/html/buyTickets.html" class="buy-button">Buy Tickets</a> -->
+            </nav>
+        </header>
+
+        <div id="speaker-modal" class="modal">
+            <div class="modal-content">
+                <span id="close-btn">&times;</span>
+                <div class="speaker-detail-wrapper" id="speaker-face"></div>
+                <div id="speaker-name" class="speaker-name"></div>
+                <div id="speaker-title" class="speaker-title"></div>
+                <div id="speaker-bio" class="speaker-bio"></div>
             </div>
         </div>
-        <footer>
-            <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-follow-button twitter-follow-button-rendered" style="position: static; visibility: visible; width: 223px; height: 28px;" title="Twitter Follow Button" src="https://platform.twitter.com/widgets/follow_button.32d6c6b4cb1ed84df04e7f9705a90c47.en.html#dnt=false&amp;id=twitter-widget-0&amp;lang=en&amp;screen_name=sf_gdg&amp;show_count=true&amp;show_screen_name=true&amp;size=l&amp;time=1536554780543" data-screen-name="sf_gdg"></iframe>
-        </footer>
-    </div>
-</body>
+
+        <div id="content" class="content">
+            <div class="content-text">
+                <h1>Codelab Organizer</h1>
+                <div class="speaker-list">
+                    <div id="modal-button" class="speaker-card" onclick='trigger(VikramObj)'>
+                        <div class="speaker-wrapper" id="speaker-vikram">
+                        </div>
+                        <p class="subtitle speaker-name">Vikram Tiwari</p>
+                    </div>
+
+                </div>
+                <h1>Speakers</h1>
+                <div class="speaker-list">
+                    <div id="modal-button" class="speaker-card" onclick='trigger(GrantObj)'>
+                        <div class="speaker-wrapper" id="speaker-grant">
+                        </div>
+                        <p class="subtitle speaker-name">Grant Timmerman</p>
+                    </div>
+                    <div id="modal-button" class="speaker-card" onclick='trigger(AishwaryaObj)'>
+                        <div class="speaker-wrapper" id="speaker-aishwarya">
+                        </div>
+                        <p class="subtitle speaker-name">Aishwarya Parasuram</p>
+                    </div>
+                    <div id="modal-button" class="speaker-card" onclick='trigger(QueenieObj)'>
+                        <div class="speaker-wrapper" id="speaker-queenie">
+                        </div>
+                        <p class="subtitle speaker-name">Queenie Ho</p>
+                    </div>
+                    <div id="modal-button" class="speaker-card" onclick='trigger(RebecaObj)'>
+                        <div class="speaker-wrapper" id="speaker-rebecca">
+                        </div>
+                        <p class="subtitle speaker-name">Rebeca	Gallardo</p>
+                    </div>
+                    <div id="modal-button" class="speaker-card" onclick='trigger(FrancesObj)'>
+                        <div class="speaker-wrapper" id="speaker-frances">
+                        </div>
+                        <p class="subtitle speaker-name">Frances	Coronel</p>
+                    </div>
+                    <div id="modal-button" class="speaker-card" onclick='trigger(TerrenceObj)'>
+                        <div class="speaker-wrapper" id="speaker-terrence">
+                        </div>
+                        <p class="subtitle speaker-name">Terrence	Ryan</p>
+                    </div>
+                    <div id="modal-button" class="speaker-card" onclick='trigger(MeiyiObj)'>
+                        <div class="speaker-wrapper" id="speaker-meiyi">
+                        </div>
+                        <p class="subtitle speaker-name">Meiyi	Li</p>
+                    </div>
+                    <div id="modal-button" class="speaker-card" onclick='trigger(CheneyObj)'>
+                        <div class="speaker-wrapper" id="speaker-cheney">
+                        </div>
+                        <p class="subtitle speaker-name">Cheney	Tsai</p>
+                    </div>
+                    <div id="modal-button" class="speaker-card" onclick='trigger(CarenObj)'>
+                        <div class="speaker-wrapper" id="speaker-caren">
+                        </div>
+                        <p class="subtitle speaker-name">Caren	Chang</p>
+                    </div>
+                    <div id="modal-button" class="speaker-card" onclick='trigger(ChloeObj)'>
+                        <div class="speaker-wrapper" id="speaker-chloe">
+                        </div>
+                        <p class="subtitle speaker-name">Chloe	Condon</p>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-follow-button twitter-follow-button-rendered" style="position: static; visibility: visible; width: 223px; height: 28px;" title="Twitter Follow Button" src="https://platform.twitter.com/widgets/follow_button.32d6c6b4cb1ed84df04e7f9705a90c47.en.html#dnt=false&amp;id=twitter-widget-0&amp;lang=en&amp;screen_name=sf_gdg&amp;show_count=true&amp;show_screen_name=true&amp;size=l&amp;time=1536554780543" data-screen-name="sf_gdg"></iframe>
+            </footer>
+        </div>
+    </body>
 </html>
