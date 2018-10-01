@@ -1,7 +1,7 @@
 let VikramObj = {
   picture: "vikram_tiwari.png",
   name: "Vikram Tiwari",
-  title: "End to End Machine Learning",
+  title: "End to End Machine Learning Codelab",
   bio: "Interested in learning machince learning from beginning to end? Join in this all day code lab and you'll learn by developing a ML model using TensorFlow, training and deploying it on Google Cloud and then finally use it to get inferences."
 };
 
