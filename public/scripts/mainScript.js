@@ -31,27 +31,24 @@ function closeWindow() {
   }, 300);
 }
 
-function trigger(element, png) {
+function trigger(speakerObj) {
   // Get the modal
-  var modal = document.getElementById('speaker-modal');
+  var modal = document.getElementById('speaker-modal'),
+      speakerFace = document.getElementById('speaker-face'),
+      modalImage = document.getElementById('modal-image'),
+      closeBtn = document.getElementById('close-btn'),
+      speakerName = document.getElementById('speaker-name'),
+      speakerTitle = document.getElementById('speaker-title'),
+      speakerBio = document.getElementById('speaker-bio');
 
-  // Get the modal-content
-  var modalImage = document.getElementById('modal-image');
-
-  // Get the button that opens the modal
-  var btn = document.getElementById('modal-button');
-
-  // Get the <span> element that closes the modal
-  var span = document.getElementsByClassName('close')[0];
-
-  // When the user clicks on the button, open the modal
-  btn.onclick = function() {
-    modal.style.display = "block";
-    modalImage.src = '../images/' + png;
-  };
+  modal.style.display = 'block';
+  speakerFace.style.backgroundImage = 'url("../images/' + speakerObj.picture + '")';
+  speakerName.innerHTML = speakerObj.name;
+  speakerTitle.innerHTML = speakerObj.title;
+  speakerBio.innerHTML = speakerObj.bio;
 
   // When the user clicks on <span> (x), close the modal
-  span.onclick = function() {
+  closeBtn.onclick = function() {
     modal.style.display = "none";
   };
 

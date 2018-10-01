@@ -18,21 +18,20 @@
       </div>
       <div class="menu-button" onclick="openMenu()"></div>
       <nav>
-        <a href="/html/agenda.html">Agenda</a>
-        <a href="/html/speakers.html">Speakers</a>
-        <a href="/html/codeOfConduct.html">Code of Conduct</a>
+        <a href="./agenda.html">Agenda</a>
+        <a href="./speakers.html">Speakers</a>
+        <a href="./codeOfConduct.html">Code of Conduct</a>
         <!-- <a href="/html/buyTickets.html" class="buy-button">Buy Tickets</a> -->
       </nav>
     </header>
 
     <div id="speaker-modal" class="modal">
         <div class="modal-content">
-            <span class="close">&times;</span>
-            <div class="speaker-detail-wrapper">
-                <div class="speaker-detail-photo">
-                    <img id="modal-image"></img>
-                </div>
-            </div>
+            <span id="close-btn">&times;</span>
+            <div class="speaker-detail-wrapper" id="speaker-face"></div>
+            <div id="speaker-name" class="speaker-name"></div>
+            <div id="speaker-title" class="speaker-title"></div>
+            <div id="speaker-bio" class="speaker-bio"></div>
         </div>
     </div>
 
@@ -40,16 +39,23 @@
         <div class="content-text">
             <h1>Codelab Organizer</h1>
             <div class="speaker-list">
-                <div onclick="trigger(this, 'vikram_tiwari.png')">
-                    <div id="modal-button" class="speaker-card">
-                        <div class="speaker-wrapper">
-                            <div class="speaker-photo">
-                                <img alt="Vikram Tiwari" src="../images/vikram_tiwari.png"></img>
-                            </div>
-                        </div>
-                        <p class="subtitle speaker-name">Vikram Tiwari</p>
+                <script>
+                    // you can put this wherever you want
+
+                    let VikramObj = {
+                        picture: "vikram_tiwari.png",
+                        name: "Vikram Tiwari",
+                        title: "President of Presidential things",
+                        bio: "IT IS A TRUTH universally acknowledged, that a single man in possession of a good fortune must be in want of a wife. However little known the feelings or views of such a man may be on his first entering a neighbourhood, this truth is so well fixed in the minds of the surrounding families, that he is considered as the rightful property of some one or other of their daughters. \"My dear Mr. Bennet,\" said his lady to him one day, \"have you heard that Netherfield Park is let at last?\" Mr. Bennet replied that he had not. \"But it is,\" returned she; \"for Mrs. Long has just been here, and she told me all about it.\" Mr. Bennet made no answer. \"Do not you want to know who has taken it?\" cried his wife impatiently. \"You  want to tell me, and I have no objection to hearing it.\" This was invitation enough. \"Why, my dear, you must know, Mrs. Long says that Netherfield is taken by a young man of large fortune from the north of England; that he came down on Monday in a chaise and four to see the place, and was so much delighted with it that he agreed with Mr. Morris immediately; that he is to take possession before Michaelmas, and some of his servants are to be in the house by the end of next week.\""
+                    }
+                </script>
+                
+                <div id="modal-button" class="speaker-card" onclick='trigger(VikramObj)'>
+                    <div class="speaker-wrapper" id="speaker-vikram">
                     </div>
+                    <p class="subtitle speaker-name">Vikram Tiwari</p>
                 </div>
+
             </div>
             <h1>Be one of our speakers</h1>
             <h2>Submit a proposal!</h2>
