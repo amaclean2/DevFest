@@ -307,6 +307,46 @@ footer {
   background-image: url('../images/vikram_tiwari.png');
 }
 
+#speaker-grant {
+  background-image: url('../images/grant_timmerman.jpg');
+}
+
+#speaker-aishwarya {
+  background-image: url('../images/aishwarya_parasuram.webp');
+}
+
+#speaker-queenie {
+  background-image: url('../images/queenie_ho.png');
+}
+
+#speaker-rebecca {
+  background-image: url('../images/rebeca_gallardo.png');
+}
+
+#speaker-frances {
+  background-image: url('../images/frances_coronel.png');
+}
+
+#speaker-terrence {
+  background-image: url('../images/terrence_ryan.png');
+}
+
+#speaker-meiyi {
+  background-image: url('../images/android.png');
+}
+
+#speaker-cheney {
+  background-image: url('../images/cheney_tsai.webp');
+}
+
+#speaker-caren {
+  background-image: url('../images/caren_chang.png');
+}
+
+#speaker-chloe {
+  background-image: url('../images/chloe_condon.png');
+}
+
 .speaker-name {
   text-align: center;
 }
@@ -315,6 +355,7 @@ footer {
   height: 200px;
   width: 200px;
   display: block;
+  background: #172636;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
