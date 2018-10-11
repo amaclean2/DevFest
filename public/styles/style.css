@@ -120,6 +120,10 @@ body:after {
   background-repeat: no-repeat;
 }
 
+.sponsors {
+  max-width: 100%;
+}
+
 .title-text {
   color: #666;
 }

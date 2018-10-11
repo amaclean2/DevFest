@@ -8,3 +8,5 @@
 
 **/*.log
 *.cache
+
+**/*.DS_Store
