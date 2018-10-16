@@ -15,7 +15,7 @@ let GrantObj = {
   workplace: "Google",
   bio: "Grant is a developer platform engineer at Google where he leads open source for G Suite APIs. He loves Node, GitHub, and plays the alto saxophone in his spare time.",
   talk_title: "All About Apps Script",
-  talk: " Learn how to increase the power of your favorite Google apps — like Calendar, Docs, Drive, Gmail, Sheets, and Slides – with JavaScript in Google Cloud."
+  talk: "Learn how to increase the power of your favorite Google apps — like Calendar, Docs, Drive, Gmail, Sheets, and Slides – with JavaScript in Google Cloud."
 };
 
 
