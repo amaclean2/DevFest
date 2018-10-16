@@ -39,13 +39,15 @@ function trigger(speakerObj) {
       closeBtn = document.getElementById('close-btn'),
       speakerName = document.getElementById('speaker-name'),
       speakerTitle = document.getElementById('speaker-title'),
-      speakerBio = document.getElementById('speaker-bio');
+      speakerBio = document.getElementById('speaker-bio'),
+      speakerTalkTitle = document.getElementById('speaker-talk-title');
 
   modal.style.display = 'block';
   speakerFace.style.backgroundImage = 'url("../images/' + speakerObj.picture + '")';
   speakerName.innerHTML = speakerObj.name;
-  speakerTitle.innerHTML = speakerObj.title;
+  speakerTitle.innerHTML = speakerObj.title + " @ " + speakerObj.workplace;
   speakerBio.innerHTML = speakerObj.bio;
+  speakerTalkTitle.innerHTML = speakerObj.talk_title;
 
   // When the user clicks on <span> (x), close the modal
   closeBtn.onclick = function() {
