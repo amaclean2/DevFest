@@ -159,7 +159,7 @@ let ShivaObj = {
   talk: "Most designers are experts at improving upon existing experiences - but how does your process translate to a brand new product? How do you figure out who your users are, find/validate your product's purpose, effectively engage stakeholders, and keep your customer at the center of it all? When developing a brand new product idea from 0->1, your role as a designer on the team evolves as your team transitions from one phase to the next. This talk will help you take away some key learnings on how to evolve/reinvent yourself on your journey of incubating new product ideas."
 };
 
-let JustinObj = {
+let JasonObj = {
   picture: "jason_mayes.png",
   name: "Jason	Mayes",
   title: "Senior Creative Engineer",
