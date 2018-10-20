@@ -158,3 +158,25 @@ let ShivaObj = {
   talk_title: "Turning blue-sky ideas into successful products as a UX co-founder",
   talk: "Most designers are experts at improving upon existing experiences - but how does your process translate to a brand new product? How do you figure out who your users are, find/validate your product's purpose, effectively engage stakeholders, and keep your customer at the center of it all? When developing a brand new product idea from 0->1, your role as a designer on the team evolves as your team transitions from one phase to the next. This talk will help you take away some key learnings on how to evolve/reinvent yourself on your journey of incubating new product ideas."
 };
+
+let JustinObj = {
+  picture: "jason_mayes.png",
+  name: "Jason	Mayes",
+  title: "Senior Creative Engineer",
+  workplace: "Google",
+  bio: "Jason combines his knowledge of the technical and creative worlds to solve complex, strategic / technical challenges for Google's largest customers and internal teams. Developing innovative world firsts utilizing the latest technologies and hardware is a key component of his role where it is his responsibility to know something about everything that matters in the tech industry to rapidly prototype new ideas and consult on project solutions globally. With a background in Computer Science at the University of Bristol, England, where he specialized in reality mining and invisible computing, Jason has been a \"hybrid engineer\" for over 10 years. Combining his passion for several areas including both front and back end web programming, but also design and user experience, he has worked in many sizes of company from startups (including founding his own) to Google. As a mentor to many, he enjoys sharing his daily discoveries for all his curiosities online, which has attracted a global following of over 300,000.",
+  talk_title: "Understanding Machine Learning in 45 minutes",
+  talk: "Curious about Artificial Intelligence, Machine Learning, or Deep Learning? What's the difference between them? Want to understand how others are using ML creatively? If you are new to these areas and want to learn what is going on behind the scenes, but not from a mathematical / computer science background, then this talk is for you. Take this this speedy 45 minute tour of the state of Machine Learning in 2018 by Jason Mayes, Senior Creative Engineer at Google. This talk will cover a high level overview of how deep neural networks work, their creative applications, along with some of the APIs and libraries that you can use from Google today to get started to do more advanced things. This fast paced talk aims to educate, inspire, and enable you to rapidly prototype your next idea in this amazing industry. This talk is aimed at beginners (no coding or mathematical background required) or those who may be familiar but curious about it's creative applications in industry."
+};
+
+let SpeakesList = [VikramObj, GrantObj, AishwaryaObj, QueenieObj, RebecaObj, FrancesObj, TerrenceObj, MeiyiObj, CheneyObj, CarenObj, ChloeObj, JessicaObj, AlexObj, GeorgeObj, RachelObj, ShivaObj];
+
+let theater = [JessicaObj, TerrenceObj, CheneyObj, MeiyiObj, ShivaObj];
+let room1 = [ChloeObj, RachelObj, GrantObj, AishwaryaObj, FrancesObj];
+let room2 = [AlexObj, QueenieObj, RebecaObj, GeorgeObj, CarenObj];
+
+let nineObj = [JessicaObj, ChloeObj, AlexObj];
+let tenObj = [TerrenceObj, RachelObj, QueenieObj];
+let elevenObj = [CheneyObj, GrantObj, RebecaObj];
+let oneObj = [MeiyiObj, AishwaryaObj, GeorgeObj];
+let twoObj = [ShivaObj, FrancesObj, CarenObj];
