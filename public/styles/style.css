@@ -19,6 +19,7 @@ header {
   justify-content: space-between;
   padding: 0 15px 0 60px;
   box-sizing: border-box;
+  z-index: 5;
 }
 
 header nav a {
@@ -194,75 +195,6 @@ footer {
   margin-top: 150px;
 }
 
-@media screen and (max-width: 856px) {
-    body:before, body:after {
-      display: none;
-    }
-
-    nav {
-      display: none;
-    }
-
-    nav.right-menu {
-      display: inline-block;
-      position: fixed;
-      right: 0;
-      top: 0;
-      height: 100vh;
-      width: 212px;
-      background-color: #EEE;
-      padding: 50px 0px;
-      text-align: left;
-    }
-
-    .nav-background {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      background-color: #000000;
-      opacity: 0.6;
-      transition: all 0.3s ease-in-out;
-    }
-
-    .nav-background-closed {
-      opacity: 0;
-    }
-
-    nav.right-menu a {
-      display: block;
-      padding: 10px 20px;
-    }
-
-    nav.right-menu a:hover {
-      text-shadow: none;
-      background-color: #F6F6F6;
-    }
-
-    .menu-button {
-      display: inline-block;
-      width: 30px;
-      height: 30px;
-      background-image: url('../images/bars-solid.svg');
-      background-repeat: no-repeat;
-      background-size: contain;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    .content {
-      max-width: 500px;
-      width: 100vw;
-      padding: 10px;
-      box-sizing: border-box;
-    }
-
-    .header-logo img {
-      width: 100%;
-    }
-}
-
 .subtitle {
   color: #4a4a4a;
   font-size: 1.25rem;
@@ -323,24 +255,42 @@ footer {
 }
 
 .calendar-item .event {
-  position: absolute;
-  top: 5px;
-  left: 100px;
   border-radius: 10px;
   padding: 10px;
   z-index: 1;
   box-sizing: border-box;
+  font-family: arial;
+  font-size: 13px;
+  margin: 0 3px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.event:hover {
+  flex: 2;
+}
+
+.events-container {
+  position: absolute;
+  left: 100px;
+  top: 5px;
+  width: calc(100% - 105px);
+  z-index: 1;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .event.two-hour-event {
   height: 195px;
-  background-color: #FF9999;
+  background-color: #FF9999AA;
   width: calc(100% - 105px);
 }
 
 .event.half-hour-event {
   height: 45px;
-  background-color: #BBFFBB;
+  background-color: #BBFFBBAA;
   width: calc(100% - 115px);
 }
 
@@ -350,23 +300,16 @@ footer {
 
 .event.second.one-hour-event {
   margin-top: 45px;
-  height: 105px;
+  height: 100px;
 }
 
 .event.one-hour-event {
   height: 90px;
-  background-color: #BBDDFF;
+  background-color: #BBDDFFAA;
   width: calc(100% - 110px);
 }
 
-.event.one-hour-event.talk1,
-.event.one-hour-event.talk2,
-.event.one-hour-event.talk3 {
-  position: relative;
-  width: 25%;
-  float: left;
-  text-align: center;
-}
+
 
 .event.second-event {
   left: 120px;
@@ -380,6 +323,7 @@ footer {
   position: relative;
   padding: 10px 15px;
   float: left;
+  font-size: 17px;
 }
 
 #speaker-vikram {
@@ -481,11 +425,6 @@ footer {
   height: 150px;
 }
 
-.talk-title {
-  overflow-wrap: normal;
-  font-family: Caveat, arial;
-}
-
 .agenda-modal {
   width: 200px;
   height: 200px;
@@ -493,34 +432,49 @@ footer {
 
 .agenda-content {
     position: relative;
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 15% auto;
     padding: 20px;
-    border: 1px solid #888;
-    width: 70%; /* Could be more or less, depending on screen size */
+    width: 70%;
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
     animation-duration: 0.2s;
-    background-color: white;
+    background-color: #FFF;
     border-radius: 5px;
     -webkit-box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
     box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
     color: #4a4a4a;
     overflow: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.agenda-content .agenda-text {
+  flex: 1;
+}
+
+.agenda-text .by-line div {
+  display: inline-block;
+  font-family: arial;
+  font-weight: bolder;
+}
+
+.agenda-text .by-line {
+  font-size: 17px;
+  margin: 10px 0 15px 0;
+  display: block;
 }
 
 .agenda-detail-wrapper {
   height: 200px;
   width: 200px;
-  display: block;
-  background: #172636;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   border-radius: 10px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.3);
-  margin: 30px auto;
+  margin: 0 20px 0 10px;
 }
 
 /* The Modal (background) */
@@ -540,12 +494,6 @@ footer {
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-.speaker-name {
-  font-family: Caveat, arial;
-  font-size: 30px;
-  font-weight: bolder;
-}
-
 .speaker-title {
   font-size: 17px;
   font-weight: normal;
@@ -560,7 +508,7 @@ footer {
 }
 
 .speaker-talk-title {
-  font-size: 17px;
+  font-size: 25px;
   font-weight: normal;
   margin: 10px 0;
 }
@@ -610,4 +558,80 @@ footer {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+@media screen and (max-width: 856px) {
+    body:before, body:after {
+      display: none;
+    }
+
+    nav {
+      display: none;
+    }
+
+    .agenda-content {
+      width: 100%;
+      box-sizing: border-box;
+      flex-direction: column;
+      margin-top: 80px;
+      border-radius: 0;
+    }
+
+    nav.right-menu {
+      display: inline-block;
+      position: fixed;
+      right: 0;
+      top: 0;
+      height: 100vh;
+      width: 212px;
+      background-color: #EEE;
+      padding: 50px 0px;
+      text-align: left;
+    }
+
+    .nav-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: #000000;
+      opacity: 0.6;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .nav-background-closed {
+      opacity: 0;
+    }
+
+    nav.right-menu a {
+      display: inline-block;
+      margin: 15px;
+    }
+
+    nav.right-menu a:hover {
+      text-shadow: none;
+    }
+
+    .menu-button {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      background-image: url('../images/bars-solid.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .content {
+      max-width: 500px;
+      width: 100vw;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .header-logo img {
+      width: 100%;
+    }
 }

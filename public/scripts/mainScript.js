@@ -1,12 +1,3 @@
-function talkTitleOpen(speakerObj) {
-  let  talk = document.getElementById('speaker-talk');
-  talk.innerHTML = speakerObj.talk_title;
-}
-
-function talkTitleClose(speakerObj) {
-
-}
-
 function openMenu() {
   let nav = document.querySelectorAll('nav')[0],
       container = nav.parentElement;
