@@ -339,15 +339,33 @@ footer {
 }
 
 .event.half-hour-event {
-  height: 50px;
+  height: 45px;
   background-color: #BBFFBB;
   width: calc(100% - 115px);
+}
+
+.event.second.half-hour-event {
+  margin-top: 45px;
+}
+
+.event.second.one-hour-event {
+  margin-top: 45px;
+  height: 105px;
 }
 
 .event.one-hour-event {
   height: 90px;
   background-color: #BBDDFF;
   width: calc(100% - 110px);
+}
+
+.event.one-hour-event.talk1,
+.event.one-hour-event.talk2,
+.event.one-hour-event.talk3 {
+  position: relative;
+  width: 25%;
+  float: left;
+  text-align: center;
 }
 
 .event.second-event {
@@ -359,7 +377,10 @@ footer {
 }
 
 .calendar-item .calendar-header {
+  position: relative;
+  width: 10%;
   padding: 10px 15px;
+  float: left;
   display: inline-block;
 }
 
