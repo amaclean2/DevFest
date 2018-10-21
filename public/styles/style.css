@@ -268,6 +268,10 @@ footer {
   transition: all 0.3s ease-in-out;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 .event:hover {
   flex: 2;
 }
@@ -284,14 +288,29 @@ footer {
 
 .event.two-hour-event {
   height: 195px;
-  background-color: #FF9999AA;
+  width: calc(100% - 105px);
+}
+
+.event.three-hour-event {
+  height: 295px;
   width: calc(100% - 105px);
 }
 
 .event.half-hour-event {
   height: 45px;
-  background-color: #BBFFBBAA;
   width: calc(100% - 115px);
+}
+
+.green {
+  background-color: #BBFFBBAA;
+}
+
+.blue {
+  background-color: #BBDDFFAA;
+}
+
+.red {
+  background-color: #FF9999AA;
 }
 
 .event.second.half-hour-event {
@@ -305,7 +324,6 @@ footer {
 
 .event.one-hour-event {
   height: 90px;
-  background-color: #BBDDFFAA;
   width: calc(100% - 110px);
 }
 
