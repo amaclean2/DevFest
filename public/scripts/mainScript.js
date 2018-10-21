@@ -73,7 +73,6 @@ function agendaTrigger(speakerObj) {
       speakerTalkTitle = document.getElementById('speaker-talk-title'),
       speakerTalkSummary = document.getElementById('speaker-talk-summary');
 
-  console.log(speakerObj);
   modal.style.display = 'block';
   speakerFace.style.backgroundImage = 'url("../images/' + speakerObj.picture + '")';
   speakerName.innerHTML = speakerObj.name;
