@@ -433,8 +433,9 @@ footer {
 .agenda-content {
     position: relative;
     margin: 15% auto;
-    padding: 20px;
+    padding: 30px;
     width: 70%;
+    max-width: 600px;
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
@@ -446,12 +447,13 @@ footer {
     color: #4a4a4a;
     overflow: auto;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
 }
 
 .agenda-content .agenda-text {
   flex: 1;
+  margin: 0 10px;
 }
 
 .agenda-text .by-line div {
@@ -482,7 +484,7 @@ footer {
   text-align: left;
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 2; /* Sit on top */
+  z-index: 6; /* Sit on top */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -492,6 +494,7 @@ footer {
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
 }
 
 .speaker-title {
@@ -573,7 +576,6 @@ footer {
       width: 100%;
       box-sizing: border-box;
       flex-direction: column;
-      margin-top: 80px;
       border-radius: 0;
     }
 
