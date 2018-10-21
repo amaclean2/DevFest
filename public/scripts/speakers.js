@@ -51,7 +51,7 @@ let RebecaObj = {
 
 let FrancesObj = {
   picture: "frances_coronel.png",
-  name: "Frances	Coronel",
+  name: "Frances Coronel",
   title: "Software Engineer",
   workplace: "Slack",
   bio: "Frances Coronel is a developer with a design background who gets a lot of personal satisfaction out of helping the local tech community through her varied skill set. She is currently a Software Engineer at Slack and has been working professionally as a developer since 2015. Her passions outside of work include contributing to open-source, blogging about her adventures in tech, and traveling with her partner using Airbnb.",
@@ -61,7 +61,7 @@ let FrancesObj = {
 
 let TerrenceObj = {
   picture: "terrence_ryan.png",
-  name: "Terrence	Ryan",
+  name: "Terrence Ryan",
   title: "Developer Advocate",
   workplace: "Google",
   bio: "Terry Ryan is a Developer Advocate for the Google Cloud Platform team. He has a passion for building demos that make hard technical concepts easy to understand.  Before Google, he worked for Adobe and the Wharton School of Business.\nHe also wrote Driving Technical Change for Pragmatic Bookshelf, a book that arms technology professionals with the tools to convince reluctant co-workers to adopt new tools and technology.",
