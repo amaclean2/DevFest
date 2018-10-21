@@ -172,11 +172,11 @@ let JasonObj = {
 let SpeakesList = [VikramObj, GrantObj, AishwaryaObj, QueenieObj, RebecaObj, FrancesObj, TerrenceObj, MeiyiObj, CheneyObj, CarenObj, ChloeObj, JessicaObj, AlexObj, GeorgeObj, RachelObj, ShivaObj];
 
 let theater = [JessicaObj, TerrenceObj, CheneyObj, MeiyiObj, ShivaObj];
-let room1 = [ChloeObj, RachelObj, GrantObj, AishwaryaObj, FrancesObj];
+let room1 = [ChloeObj, RachelObj, GrantObj, JasonObj, FrancesObj];
 let room2 = [AlexObj, QueenieObj, RebecaObj, GeorgeObj, CarenObj];
 
 let nineObj = [JessicaObj, ChloeObj, AlexObj];
 let tenObj = [TerrenceObj, RachelObj, QueenieObj];
 let elevenObj = [CheneyObj, GrantObj, RebecaObj];
-let oneObj = [MeiyiObj, AishwaryaObj, GeorgeObj];
+let oneObj = [MeiyiObj, JasonObj, GeorgeObj];
 let twoObj = [ShivaObj, FrancesObj, CarenObj];

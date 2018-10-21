@@ -1,6 +1,15 @@
+function talkTitleOpen(speakerObj) {
+  let  talk = document.getElementById('speaker-talk');
+  talk.innerHTML = speakerObj.talk_title;
+}
+
+function talkTitleClose(speakerObj) {
+
+}
+
 function openMenu() {
   let nav = document.querySelectorAll('nav')[0],
-    container = nav.parentElement;
+      container = nav.parentElement;
 
   if(!document.querySelectorAll('.nav-background').length) {
 
@@ -20,7 +29,7 @@ function openMenu() {
 
 function closeWindow() {
   let nav = document.querySelectorAll('nav')[0],
-    navBackground = document.querySelectorAll('.nav-background')[0];
+      navBackground = document.querySelectorAll('.nav-background')[0];
 
   nav.classList.remove('right-menu');
   navBackground.classList.add('nav-background-closed');
@@ -48,6 +57,35 @@ function trigger(speakerObj) {
   speakerName.innerHTML = speakerObj.name;
   speakerTitle.innerHTML = speakerObj.title + " @ " + speakerObj.workplace;
   speakerBio.innerHTML = speakerObj.bio;
+  speakerTalkTitle.innerHTML = speakerObj.talk_title;
+  speakerTalkSummary.innerHTML = speakerObj.talk;
+
+  // When the user clicks on <span> (x), close the modal
+  closeBtn.onclick = function() {
+    modal.style.display = "none";
+  };
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  };
+}
+
+function agendaTrigger(speakerObj) {
+  // Get the modal
+  var modal = document.getElementById('agenda-modal'),
+      closeBtn = document.getElementById('close-btn'),
+      speakerFace = document.getElementById('speaker-face'),
+      speakerName = document.getElementById('speaker-name'),
+      speakerTalkTitle = document.getElementById('speaker-talk-title'),
+      speakerTalkSummary = document.getElementById('speaker-talk-summary');
+
+  console.log(speakerObj);
+  modal.style.display = 'block';
+  speakerFace.style.backgroundImage = 'url("../images/' + speakerObj.picture + '")';
+  speakerName.innerHTML = speakerObj.name;
   speakerTalkTitle.innerHTML = speakerObj.talk_title;
   speakerTalkSummary.innerHTML = speakerObj.talk;
 

@@ -378,10 +378,8 @@ footer {
 
 .calendar-item .calendar-header {
   position: relative;
-  width: 10%;
   padding: 10px 15px;
   float: left;
-  display: inline-block;
 }
 
 #speaker-vikram {
@@ -452,7 +450,6 @@ footer {
   background-image: url('../images/jason_mayes.png');
 }
 
-
 .speaker-name {
   text-align: center;
 }
@@ -462,6 +459,58 @@ footer {
 }
 
 .speaker-detail-wrapper {
+  height: 200px;
+  width: 200px;
+  float: left;
+  background: #172636;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  margin: 30px auto;
+}
+
+.agenda {
+  width: 200px;
+  height: 200px;
+}
+
+.hour {
+  width: 150px;
+  height: 150px;
+}
+
+.talk-title {
+  overflow-wrap: normal;
+  font-family: Caveat, arial;
+}
+
+.agenda-modal {
+  width: 200px;
+  height: 200px;
+}
+
+.agenda-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%; /* Could be more or less, depending on screen size */
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.2s;
+    background-color: white;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+    box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+    color: #4a4a4a;
+    overflow: auto;
+}
+
+.agenda-detail-wrapper {
   height: 200px;
   width: 200px;
   display: block;
@@ -474,13 +523,12 @@ footer {
   margin: 30px auto;
 }
 
-
 /* The Modal (background) */
 .modal {
   text-align: left;
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  z-index: 2; /* Sit on top */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
