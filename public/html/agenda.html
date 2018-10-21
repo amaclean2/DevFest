@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <script src="https://use.fontawesome.com/ba4699d27e.js"></script>
         <script src="../scripts/mainScript.js"></script>
+        <script src="../scripts/speakers.js"></script>
         <meta charset="UTF-8">
     </head>
     <body>
@@ -24,6 +25,18 @@
                 <a href="https://www.eventbrite.com/e/gdg-devfest-2018-tickets-50824608773" class="buy-button">Buy Tickets</a>
             </nav>
         </header>
+
+        <div id="agenda-modal" class="modal">
+            <div class="agenda-content">
+                <span id="close-btn">&times;</span>
+                <div class="agenda-detail-wrapper" id="speaker-face"></div>
+                <div class="agenda-text">
+                    <div id="speaker-talk-title" class="speaker-talk-title"></div>
+                    <span>By <div id="speaker-name" class="speaker-name left"></div></span>
+                    <div id="speaker-talk-summary" class="speaker-talk-summary"></div>
+                </div>
+            </div>
+        </div>
 
         <div class="content">
             <div class="content-text">
@@ -44,27 +57,25 @@
                         </div>
                         <div class="calendar-item">
                             <span class="calendar-header">10:00 AM</span>
-                            <div class="event one-hour-event talk1">
-                                One Hour Event
+                            <div id="modal-button" class="event one-hour-event talk1" onclick="agendaTrigger(JessicaObj)" onmouseover="talkTitleOpen(JessicaObj)" onmouseout="talkTitleClose(JessicaObj)">
+                                <p id="speaker-talk" class="talk-title"></p>
                             </div>
-                            <div class="event one-hour-event talk2">
-                                One Hour Event
+                            <div id="modal-button" class="event one-hour-event talk2" onclick="agendaTrigger(ChloeObj)" onmouseover="talkTitleOpen(ChloeObj)" onmouseout="talkTitleClose(ChloeObj)">
+                                <p id="event-text"></p>
                             </div>
-                            <div class="event one-hour-event talk3">
-                                One Hour Event
+                            <div id="modal-button" class="event one-hour-event talk3" onclick=agendaTrigger(AlexObj) onmouseover="talkTitleOpen(AlexObj)" onmouseout="talkTitleClose(AlexObj)">
+                                <p id="speaker-talk" class="talk-title"></p>
                             </div>
                         </div>
                         <div class="calendar-item">
                             <span class="calendar-header">11:00 AM</span>
-                            <div class="event one-hour-event talk1">
-                                One Hour Event
+                            <div id="modal-button" class="event one-hour-event talk1" onclick=agendaTrigger(TerranceObj) onmouseover="talkTitleOpen(TerranceObj)" onmouseout="talkTitleClose(TerranceObj)">
+                                <p id="speaker-talk" class="talk-title"></p>
                             </div>
-                            <div class="event one-hour-event talk2">
-                                Half Hour Event
+                            <div id="modal-button" class="event one-hour-event talk2" onclick=agendaTrigger(RachelObj) onmouseover="talkTitleOpen(RachelObj)" onmouseout="talkTitleClose(RachelObj)">
+                                <p id="speaker-talk" class="talk-title"></p>
                             </div>
-                            <div class="event one-hour-event talk3">
-                                Half Hour Event
-                            </div>
+                            <div id="modal-button" class="event one-hour-event talk3" onclick=agendaTrigger(QueenieObj) onmouseover="talkTitleOpen(QueenieObj)" onmouseout="talkTitleClose(QueenieObj)">
                         </div>
                         <div class="calendar-item">
                             <span class="calendar-header">12:00 PM</span>
@@ -74,38 +85,38 @@
                         </div>
                         <div class="calendar-item">
                             <span class="calendar-header">1:00 PM</span>
-                            <div class="event one-hour-event talk1">
-                                Half Hour Event
+                            <div id="modal-button" class="event one-hour-event talk1" onclick=agendaTrigger(CheneyObj) onmouseover="talkTitleOpen(CheneyObj)" onmouseout="talkTitleClose(CheneyObj)">
+                                <p id="speaker-talk" class="talk-title"></p>
                             </div>
-                            <div class="event one-hour-event talk2">
-                                Half Hour Event
+                            <div id="modal-button" class="event one-hour-event talk2" onclick=agendaTrigger(GrantObj) onmouseover="talkTitleOpen(GrantObj)" onmouseout="talkTitleClose(GrantObj)">
+                                <p id="speaker-talk" class="talk-title"></p>
                             </div>
-                            <div class="event one-hour-event talk3">
-                                Half Hour Event
+                            <div id="modal-button" class="event one-hour-event talk3" onclick=agendaTrigger(RebecaObj) onmouseover="talkTitleOpen(RebecaObj)" onmouseout="talkTitleClose(RebecaObj)">
+                                <p id="speaker-talk" class="talk-title"></p>
                             </div>
                         </div>
                         <div class="calendar-item">
                             <span class="calendar-header">2:00 PM</span>
-                            <div class="event one-hour-event talk3">
-                                Half Hour Event
+                            <div id="modal-button" class="event one-hour-event talk1" onclick=agendaTrigger(MeiyiObj) onmouseover="talkTitleOpen(MeiyiObj)" onmouseout="talkTitleClose(MeiyiObj)">
+                                <p id="speaker-talk" class="talk-title"></p>
                             </div>
-                            <div class="event one-hour-event talk3">
-                                Half Hour Event
+                            <div id="modal-button" class="event one-hour-event talk2" onclick=agendaTrigger(JasonObj) onmouseover="talkTitleOpen(JasonObj)" onmouseout="talkTitleClose(JasonObj)">
+                                <p id="speaker-talk" class="talk-title"></p>
                             </div>
-                            <div class="event one-hour-event talk3">
-                                Half Hour Event
+                            <div id="modal-button" class="event one-hour-event talk3" onclick=agendaTrigger(GeorgeObj) onmouseover="talkTitleOpen(GeorgeObj)" onmouseout="talkTitleClose(GeorgeObj)">
+                                <p id="speaker-talk" class="talk-title"></p>
                             </div>
                         </div>
                         <div class="calendar-item">
                             <span class="calendar-header">3:00 PM</span>
-                            <div class="event one-hour-event talk3">
-                                Half Hour Event
+                            <div id="modal-button" class="event one-hour-event talk1" onclick=agendaTrigger(ShivaObj) onmouseover="talkTitleOpen(ShivaObj)" onmouseout="talkTitleClose(ShivaObj)">
+                                <p id="speaker-talk" class="talk-title"></p>
                             </div>
-                            <div class="event one-hour-event talk3">
-                                Half Hour Event
+                            <div id="modal-button" class="event one-hour-event talk2" onclick=agendaTrigger(FrancesObj) onmouseover="talkTitleOpen(FrancesObj)" onmouseout="talkTitleClose(FrancesObj)">
+                                <p id="speaker-talk" class="talk-title"></p>
                             </div>
-                            <div class="event one-hour-event talk3">
-                                Half Hour Event
+                            <div id="modal-button" class="event one-hour-event talk3" onclick=agendaTrigger(CarenObj) onmouseover="talkTitleOpen(CarenObj)" onmouseout="talkTitleClose(CarenObj)">
+                                <p id="speaker-talk" class="talk-title"></p>
                             </div>
                         </div>
                         <div class="calendar-item">
